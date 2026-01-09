@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Traders - Quality Construction Materials</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/thumbnails/004/699/296/small/at-letter-logo-modern-concept-isolated-on-white-background-vector.jpg">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/004/699/296/small/at-letter-logo-modern-concept-isolated-on-white-background-vector.jpg" alt="Aditya Traders Logo" class="logo">
+                <h1>Aditya <span class="highlight">Traders</span></h1>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#materials" class="nav-link"><i class="fas fa-bricks"></i> Materials</a>
+                <a href="#equipment" class="nav-link"><i class="fas fa-tools"></i> Equipment</a>
+                <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a>
+                <a href="#quote" class="btn-quote">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="https://t4.ftcdn.net/jpg/00/18/49/39/360_F_18493970_FX0ucgRXnYFNl5sEyh0rUGGQKGR8FTCK.jpg" alt="Construction Site">
+                    <div class="slide-content">
+                        <h2>Quality Construction Materials</h2>
+                        <p>Strong Foundations for a Better Future</p>
+                        <a href="#materials" class="btn-hero">Explore Materials</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Construction Equipment">
+                    <div class="slide-content">
+                        <h2>Premium Construction Equipment</h2>
+                        <p>Reliable Machinery for Every Project</p>
+                        <a href="#equipment" class="btn-hero">View Equipment</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Construction Materials">
+                    <div class="slide-content">
+                        <h2>Trusted Supplier Since 2009</h2>
+                        <p>15+ Years of Excellence in Construction Supply</p>
+                        <a href="#about" class="btn-hero">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-btn prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+        
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-value" data-target="15">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" data-target="1500">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" data-target="500">0</div>
+                <div class="stat-label">Projects Supported</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" data-target="24">0</div>
+                <div class="stat-label">/7 Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="section materials-section">
+        <div class="section-header">
+            <h2>Our <span class="highlight">Materials</span></h2>
+            <p>High-quality construction materials for durable and strong structures</p>
+        </div>
+        
+        <div class="materials-container" id="materialsList"></div>
+        
+        <div class="section-footer">
+            <p>Need custom materials? <a href="#contact" class="text-link">Contact us for special orders</a></p>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" class="section equipment-section">
+        <div class="section-header">
+            <h2>Construction <span class="highlight">Equipment</span></h2>
+            <p>Modern machinery available for rent and purchase</p>
+        </div>
+        
+        <div class="equipment-container" id="equipmentList"></div>
+        
+        <div class="section-footer">
+            <p>Equipment available for daily, weekly, or monthly rental</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-header">
+            <h2>About <span class="highlight">Aditya Traders</span></h2>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Construction Partner</h3>
+                    <p>Aditya Traders is a trusted supplier of quality construction materials serving Sarol (Pilodra), Borsad, Anand 388530. Owned and managed by Pravinsinh Padhiyar, the business is built on honesty, reliability, and customer satisfaction.</p>
+                    <p>We are committed to providing high-quality materials that ensure strength and durability in every project. Our extensive inventory includes cement, sand, aggregates, steel, and painting materials from trusted brands.</p>
+                    <p>With over 15 years of experience in the construction supply industry, we understand the needs of contractors, builders, and homeowners alike.</p>
+                    
+                    <div class="owner-info">
+                        <div class="owner-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="owner-details">
+                            <h4>Pravinsinh Padhiyar</h4>
+                            <p>Owner & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Quality Assurance</h4>
+                        <p>All materials are sourced from certified suppliers with quality checks.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Timely Delivery</h4>
+                        <p>On-time delivery to your construction site with our own fleet.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Trusted Partnership</h4>
+                        <p>Building long-term relationships with clients across Gujarat.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h4>Competitive Pricing</h4>
+                        <p>Best market prices with transparent billing and no hidden costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="section quote-section">
+        <div class="section-header">
+            <h2>Get a <span class="highlight">Free Quote</span></h2>
+            <p>Contact us for pricing and availability of materials and equipment</p>
+        </div>
+        
+        <div class="quote-container">
+            <div class="quote-form">
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" required>
+                            <option value="" disabled selected>Select Service Required</option>
+                            <option value="materials">Construction Materials</option>
+                            <option value="equipment">Equipment Rental</option>
+                            <option value="both">Both Materials & Equipment</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Project Details / Requirements"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Request Quote <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            
+            <div class="quote-info">
+                <h3>Quick Contact</h3>
+                <p><i class="fas fa-phone-alt"></i> <strong>Call us:</strong> +91 8320585305 / +91 9725035610</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> pravinpadhiyar612@gmail.com</p>
+                <p><i class="fas fa-clock"></i> <strong>Business Hours:</strong> Mon-Sat: 9:00 AM - 7:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Sarol (Pilodra), Borsad, Anand, Gujarat – 388530</p>
+                
+                <div class="emergency-contact">
+                    <h4><i class="fas fa-exclamation-circle"></i> Emergency Contact</h4>
+                    <p>For urgent requirements outside business hours, call: <strong>+91 8320585305</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/004/699/296/small/at-letter-logo-modern-concept-isolated-on-white-background-vector.jpg" alt="Aditya Traders Logo">
+                    <h3>Aditya <span class="highlight">Traders</span></h3>
+                </div>
+                <p class="footer-description">Your trusted partner for quality construction materials and equipment in Gujarat since 2009.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#materials">Materials</a></li>
+                    <li><a href="#equipment">Equipment</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#quote">Get Quote</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Sarol (Pilodra), Borsad, Anand, Gujarat – 388530</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 8320585305</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 9725035610</p>
+                    <p><i class="fas fa-envelope"></i> pravinpadhiyar612@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Business Hours</h4>
+                <div class="business-hours">
+                    <p><strong>Monday - Saturday:</strong> 9:00 AM - 7:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                    <p><strong>Emergency Services:</strong> Available</p>
+                </div>
+                
+                <div class="payment-methods">
+                    <h4>Payment Accepted</h4>
+                    <div class="payment-icons">
+                        <i class="fas fa-money-bill-wave" title="Cash"></i>
+                        <i class="fas fa-credit-card" title="Credit/Debit Card"></i>
+                        <i class="fas fa-university" title="Bank Transfer"></i>
+                        <i class="fab fa-google-pay" title="Google Pay"></i>
+                        <i class="fab fa-phonepe" title="PhonePe"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aditya Traders. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for the construction industry</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

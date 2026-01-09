@@ -29,16 +29,6 @@ const materials = [
         name: "Bricks",
         img: "https://builders9.com/wp-content/uploads/2020/12/b9-vijayawada-bricks.jpg",
         description: "High-quality clay bricks and concrete blocks"
-    },
-    {
-        name: "Plywood",
-        img: "https://www.zadinteriors.com/blog/wp-content/uploads/2020/02/What-Is-MR-In-Plywood.jpg",
-        description: "Various grades of plywood for construction and interior"
-    },
-    {
-        name: "Waterproofing",
-        img: "https://sunandaglobal.com/wp-content/uploads/2024/10/How-to-Choose-the-Right-Roof-Waterproofing-Services.webp",
-        description: "Chemical solutions for waterproofing structures"
     }
 ];
 
@@ -68,21 +58,6 @@ const equipment = [
         name: "Concrete Mixer",
         img: "https://4.imimg.com/data4/LE/CB/MY-11973060/transit-concrete-mixer.jpg",
         description: "Concrete mixing machines for on-site concrete preparation"
-    },
-    {
-        name: "Vibrator Machine",
-        img: "https://m.media-amazon.com/images/I/81PtZuYqJTL.jpg",
-        description: "Concrete vibrators for compaction and air removal"
-    },
-    {
-        name: "Crane",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sCTp7fdYDyYbc6GOdPWQ29wqMCXXq0wRyQ&s",
-        description: "Tower and mobile cranes for lifting heavy materials"
-    },
-    {
-        name: "Compactor",
-        img: "https://www.sakaiamerica.com/wp-content/uploads/sakai-sv544df-84-inch-14-ton-single-drum-smooth-soil-compactor-with-padfoot-shell.webp",
-        description: "Soil compactors for ground preparation and compaction"
     }
 ];
 
